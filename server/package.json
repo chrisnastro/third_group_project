@@ -1,0 +1,20 @@
+{
+    "name": "employee-database",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "watch": "nodemon",
+      "seed": "node config/seeds.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+
+    },
+    "devDependencies": {
+
+    }
+  }
