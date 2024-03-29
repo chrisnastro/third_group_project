@@ -20,8 +20,8 @@ const resolvers = {
   },
 
   Mutation: {
-    addProfile: async (parent, { name, email, password }) => {
-      const profile = await Profile.create({ name, email, password });
+    addProfile: async (parent, { name, email, password, title, department }) => {
+      const profile = await Profile.create({ name, email, password, title, department });
       const token = signToken(profile);
 
       return { token, profile };
@@ -49,6 +49,20 @@ const resolvers = {
       }
       throw AuthenticationError;
     },
+    updateTitle: async (parent, {id ,title}) => {
+        return Profile.findOneAndUpdate(
+          { _id: id },
+          { title },
+          { new: true }
+          );
+    },
+    updateDepartment: async (parent, {id ,department}) => {
+      return Profile.findOneAndUpdate(
+        { _id: id },
+        { department },
+        { new: true }
+        );
+  }
    
   },
 };
