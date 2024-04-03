@@ -57,7 +57,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: 'Kanit';
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -100,7 +100,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Kanit';
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -360,7 +360,7 @@ body {
   font-size: 16px;
   color: #1a1a1a;
   /* background-color: rgb(192, 190, 189); */
-  background: linear-gradient( #5AB1BB, #7a60b8)
+  background: linear-gradient( #dcf0f2, #9f9f9f)
 }
 
 h1,
@@ -377,8 +377,6 @@ h6 {
 
 h1 {
   font-size: 2.25rem;
-  -webkit-text-stroke-width: 0.75px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -405,6 +403,12 @@ p {
   font-size: 1.1rem;
   margin: 0 0 1rem;
   line-height: 1.5;
+}
+
+#list-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul,
@@ -927,7 +931,7 @@ a:hover {
 }
 
 .bg-info {
-  background: linear-gradient(#7a60b8, #5AB1BB) !important;
+  background: linear-gradient(#2d52e5dc, #5AB1BB) !important;
   border-bottom: 3px solid #464646;
 }
 
