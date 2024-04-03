@@ -6,6 +6,7 @@ const typeDefs = `
     password: String
     title: String
     department: String
+    photo: String
   }
 
   type Auth {
