@@ -3,80 +3,80 @@
     "name": "Brian Kernighan",
     "email": "bkernighan@techfriends.dev",
     "password": "password01",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Manager",
+    "department": "Marketing",
     "photo": "https://github.com/chrisnastro/cnastroReact/blob/main/src/images/planner.png?raw=true"
   },
   {
     "name": "Max Kanat-Alexander",
     "email": "mkanatalexander@techfriends.dev",
     "password": "password02",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Coordinator",
+    "department": "Sales",
     "photo": "https://github.com/chrisnastro/cnastroReact/blob/main/src/images/planner.png?raw=true"
   },
   {
     "name": "Amiko",
     "email": "amiko@techfriends.dev",
     "password": "password03",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Director",
+    "department": "Human Resources",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "Kent Beck",
     "email": "kbeck@techfriends.dev",
     "password": "password04",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Manager",
+    "department": "Sales",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "Edward V. Berard",
     "email": "evberard@techfriends.dev",
     "password": "password05",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Director",
+    "department": "Marketing",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "Alan Kay",
     "email": "akay@techfriends.dev",
     "password": "password06",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Coordinator",
+    "department": "Human Resources",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "C.A.R. Hoare",
     "email": "choare@techfriends.dev",
     "password": "password07",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Coordinator",
+    "department": "Marketing",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "David Thomas",
     "email": "dthomas@techfriends.dev",
     "password": "password08",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Director",
+    "department": "Sales",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "Donald Knuth",
     "email": "dknuth@techfriends.dev",
     "password": "password09",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Manager",
+    "department": "Marketing",
     "photo": "client/src/images/headshot.jpg"
   },
   {
     "name": "Lernantino",
     "email": "lernantino@techfriends.dev",
     "password": "password10",
-    "title": "manager",
-    "department": "marketing",
+    "title": "Manager",
+    "department": "Sales",
     "photo": "client/src/images/headshot.jpg"
   }
 ]
