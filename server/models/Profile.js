@@ -21,10 +21,12 @@ const profileSchema = new Schema({
   },
   title: {
     type: String,
+    required: true,
     trim: true,
   },
   department: {
     type: String,
+    required: true,
     trim: true,
   },
   photo: {
