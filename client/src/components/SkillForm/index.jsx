@@ -1,67 +1,26 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
 
-import { ADD_SKILL } from '../../utils/mutations';
 
-import Auth from '../../utils/auth';
-
-const SkillForm = ({ profileId }) => {
-  const [skill, setSkill] = useState('');
-
-  const [addSkill, { error }] = useMutation(ADD_SKILL);
-
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-
-    try {
-      const data = await addSkill({
-        variables: { profileId, skill },
-      });
-
-      setSkill('');
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
+const Profile = ({ profileId }) => {
+ 
   return (
     <div>
-      <h4>Endorse some more skills below.</h4>
+      
+      <div className="flex-row justify-space-between my-4">
 
-      {Auth.loggedIn() ? (
-        <form
-          className="flex-row justify-center justify-space-between-md align-center"
-          onSubmit={handleFormSubmit}
-        >
-          <div className="col-12 col-lg-9">
-            <input
-              placeholder="Endorse some skills..."
-              value={skill}
-              className="form-input w-100"
-              onChange={(event) => setSkill(event.target.value)}
-            />
-          </div>
+            <div key={profileId._id} className="col-12 col-xl-6">
+              <div className="card mb-3">
+                <h4 className="card-header bg-dark text-light p-2 m-0">
 
-          <div className="col-12 col-lg-3">
-            <button className="btn btn-info btn-block py-3" type="submit">
-              Endorse Skill
-            </button>
-          </div>
-          {error && (
-            <div className="col-12 my-3 bg-danger text-white p-3">
-              {error.message}
+                  
+                </h4>
+
+              </div>
             </div>
-          )}
-        </form>
-      ) : (
-        <p>
-          You need to be logged in to endorse skills. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
-      )}
+          
+      </div>
     </div>
   );
 };
 
-export default SkillForm;
+export default Profile;
+
