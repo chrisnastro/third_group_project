@@ -1,10 +1,6 @@
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-
-
-
 import { QUERY_SINGLE_PROFILE, QUERY_ME } from '../utils/queries';
-
 import Auth from '../utils/auth';
 
 const Profile = () => {
@@ -43,20 +39,23 @@ const Profile = () => {
     <div>
       <h2 className="card-header">
         {profileId ? `${profile.name}'s` : 'Your'} contact info:
-      
       </h2>
-
-
-      <div className="my-4 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-      <img
-          className="card-img-top"
-          src={profile.photo}
-          alt="Profile Photo"
-        />
-      {profile.title} <br />
-      {profile.department} <br />
-      {profile.email} <br />
-
+      <div className="profile-container">
+        <div className="my-4 p-4" style={{ border: '5px solid #1a1a1a' }} >
+          <img
+            width="20%"
+            height="auto"
+            src={profile.photo}
+            alt="Profile Photo"
+          />
+          <div className="info-container">
+            <span>
+              <p>{profile.title}</p>
+              <p>{profile.department}</p>
+              <p>{profile.email}</p>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
