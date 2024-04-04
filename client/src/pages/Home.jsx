@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
-
 import ProfileList from '../components/ProfileList';
+
 
 import { QUERY_PROFILES } from '../utils/queries';
 
@@ -15,10 +15,13 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ProfileList
-              profiles={profiles}
-              title="Current Employees"
-            />
+            <>
+              
+              <ProfileList
+                profiles={profiles}
+                title="Current Employees"
+              />
+            </>
           )}
         </div>
       </div>
