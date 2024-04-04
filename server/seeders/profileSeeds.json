@@ -5,7 +5,7 @@
     "password": "password01",
     "title": "Manager",
     "department": "Marketing",
-    "photo": "https://github.com/chrisnastro/cnastroReact/blob/main/src/images/planner.png?raw=true"
+    "photo": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHNob3R8ZW58MHx8MHx8fDA%3D"
   },
   {
     "name": "Max Kanat-Alexander",
@@ -13,7 +13,7 @@
     "password": "password02",
     "title": "Coordinator",
     "department": "Sales",
-    "photo": "https://github.com/chrisnastro/cnastroReact/blob/main/src/images/planner.png?raw=true"
+    "photo": "https://images.unsplash.com/photo-1620932934088-fbdb2920e484?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhlYWRzaG90JTIwbWFufGVufDB8fDB8fHww"
   },
   {
     "name": "Amiko",
@@ -21,7 +21,7 @@
     "password": "password03",
     "title": "Director",
     "department": "Human Resources",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhlYWRzaG90JTIwbWFufGVufDB8fDB8fHww"
   },
   {
     "name": "Kent Beck",
@@ -29,23 +29,23 @@
     "password": "password04",
     "title": "Manager",
     "department": "Sales",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVhZHNob3QlMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
-    "name": "Edward V. Berard",
-    "email": "evberard@techfriends.dev",
+    "name": "Jessica Berard",
+    "email": "jberard@techfriends.dev",
     "password": "password05",
     "title": "Director",
     "department": "Marketing",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhZHNob3QlMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D"
   },
   {
-    "name": "Alan Kay",
-    "email": "akay@techfriends.dev",
+    "name": "Mona Kay",
+    "email": "mkay@techfriends.dev",
     "password": "password06",
     "title": "Coordinator",
     "department": "Human Resources",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGhlYWRzaG90JTIwd29tZW58ZW58MHx8MHx8fDA%3D"
   },
   {
     "name": "C.A.R. Hoare",
@@ -53,7 +53,7 @@
     "password": "password07",
     "title": "Coordinator",
     "department": "Marketing",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://media.istockphoto.com/id/1391556491/photo/portrait-of-a-trensgender-person-lgbt-people-smiling-and-happy-lesbian-woman.jpg?s=1024x1024&w=is&k=20&c=6xEootaHk4j0mrNFQfWZTFh-90ZRysrzm0WMDZSWWM4="
   },
   {
     "name": "David Thomas",
@@ -61,7 +61,7 @@
     "password": "password08",
     "title": "Director",
     "department": "Sales",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://images.unsplash.com/photo-1629425733761-caae3b5f2e50?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGhlYWRzaG90c3xlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "name": "Donald Knuth",
@@ -69,7 +69,7 @@
     "password": "password09",
     "title": "Manager",
     "department": "Marketing",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://plus.unsplash.com/premium_photo-1690579805323-ce7193c0755d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGhlYWRzaG90c3xlbnwwfHwwfHx8MA%3D%3D"
   },
   {
     "name": "Lernantino",
@@ -77,6 +77,6 @@
     "password": "password10",
     "title": "Manager",
     "department": "Sales",
-    "photo": "client/src/images/headshot.jpg"
+    "photo": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHNob3QlMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D"
   }
 ]
