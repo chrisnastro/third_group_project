@@ -10,7 +10,7 @@ const ProfileList = ({ profiles, title }) => {
   const [selectedDepartments, setSelectedDepartments] = useState([])
 
   return (
-    <div id="list-head">
+    <div>
       <h3  className="text-primary">{title}</h3>
       <div className="employee-list">
       <DropdownForm
