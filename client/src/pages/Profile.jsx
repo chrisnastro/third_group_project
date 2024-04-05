@@ -36,25 +36,22 @@ const Profile = () => {
   }
 
   return (
-    <div>
-      <h2 className="card-header">
+    <div className="contact-card">
+
+      {/* <h2 className="card-header">
         {profileId ? `${profile.name}'s` : 'Your'} contact info:
-      </h2>
-      <div className="profile-container">
-        <div className="my-4 p-4" style={{ border: '5px solid #1a1a1a' }} >
-          <img
-            width="20%"
-            height="auto"
-            src={profile.photo}
-            alt="Profile Photo"
-          />
-          <div className="info-container">
-            <span>
-              <p>{profile.title}</p>
-              <p>{profile.department}</p>
-              <p>{profile.email}</p>
-            </span>
-          </div>
+      </h2> */}
+
+
+      <div className="profile-container my-4 p-4 mx-0" style={{ border: '5px solid #1a1a1a' }} >
+        <div className="profile-picture">
+          <img src={profile.photo} alt="Profile Photo" />
+        </div>
+        <div className="info-container">
+          <p>{profile.name}</p>
+          <p>{profile.title}</p>
+          <p>{profile.department}</p>
+          <p>{profile.email}</p>
         </div>
       </div>
     </div>
