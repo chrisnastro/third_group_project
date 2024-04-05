@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 const uniqueOptions = (profiles) => {
     const options = ["All Departments"];
     profiles.map(profile => {
@@ -10,7 +9,6 @@ const uniqueOptions = (profiles) => {
     })
     return options
 };
-
 
 function DropdownForm({ profiles, setSelectedDepartments }) {
 

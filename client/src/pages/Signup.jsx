@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useMutation } from '@apollo/client';
 import { ADD_PROFILE } from '../utils/mutations';
-
 import Auth from '../utils/auth';
+import Controller from 
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -14,22 +13,34 @@ const Signup = () => {
     email: '',
     password: '',
   });
+  // Added state for department ID
+  const [dept_id, setDeptId] = useState('');
+
   const [addProfile, { error, data }] = useMutation(ADD_PROFILE);
 
-  // update state based on form input changes
+  // Update formState on input change
   const handleChange = (event) => {
     const { name, value } = event.target;
-
-    setFormState({
-      ...formState,
-      [name]: value,
-    });
+    setFormState({ ...formState, [name]: value });
   };
 
-  // submit form
+  // Options for department dropdown
+  const options = [
+    { value: "Marketing", label: "Marketing" },
+    { value: "Sales", label: "Sales" },
+    { value: "Human Resources", label: "Human Resources" },
+  ];
+
+  // Handler for department selection
+  const changeHandler = (event) => {
+    setDeptId(event.target.value);
+    // Also update formState.department if necessary
+    setFormState({ ...formState, department: event.target.value });
+  };
+
+  // Submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
 
     try {
       const { data } = await addProfile({
@@ -38,6 +49,7 @@ const Signup = () => {
 
       Auth.login(data.addProfile.token);
     } catch (e) {
+      console.log()
       console.error(e);
     }
   };
@@ -79,14 +91,24 @@ const Signup = () => {
                   value={formState.title}
                   onChange={handleChange}
                 />
-                <input
-                  className="form-input"
-                  placeholder="Your department"
+                <Controller
                   name="department"
-                  type="text"
-                  value={formState.department}
-                  onChange={handleChange}
+                  control={control}
+                  rules={{ required: 'Department is required.' }}
+                  render={({ field, fieldState }) => (
+                    <Dropdown
+                      id={field.department}
+                      value={field.value}
+                      optionLabel="name"
+                      placeholder="Select a Department"
+                      options={options}
+                      focusInputRef={field.ref}
+                      onChange={(e) => field.onChange(e.value)}
+                      className={classNames({ 'p-invalid': fieldState.error })}
+                    />
+                  )}
                 />
+
                 <input
                   className="form-input"
                   placeholder="******"
