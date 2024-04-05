@@ -7,14 +7,16 @@ const ProfileList = ({ profiles, title }) => {
     return <h3>No Profiles Yet</h3>;
   }
 
-const [selectedDepartments, setSelectedDepartments] = useState([])
+  const [selectedDepartments, setSelectedDepartments] = useState([])
 
   return (
-    <div>
-      <h3 id="list-head" className="text-primary">{title}</h3>
+    <div id="list-head">
+      <h3  className="text-primary">{title}</h3>
+      <div className="employee-list">
       <DropdownForm
-                profiles={profiles}
-                setSelectedDepartments={setSelectedDepartments} />
+        profiles={profiles}
+        setSelectedDepartments={setSelectedDepartments} />
+        </div>
       <div className="flex-row justify-space-between my-4">
         {profiles &&
           profiles.filter(profile => {
@@ -32,7 +34,7 @@ const [selectedDepartments, setSelectedDepartments] = useState([])
                   {profile.name} <br />
                   {profile.title} <br />
                   {profile.department} <br />
-                  
+
                 </h4>
 
                 <Link
