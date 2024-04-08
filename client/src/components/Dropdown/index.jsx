@@ -1,8 +1,7 @@
 import { useState } from "react";
 
-
 const uniqueOptions = (profiles) => {
-    const options = ["All Departments"];
+    const options = ["Select a Department", "All Departments"];
     profiles.map(profile => {
         if (!options.includes(profile.department)) {
             options.push(profile.department)
@@ -10,7 +9,6 @@ const uniqueOptions = (profiles) => {
     })
     return options
 };
-
 
 function DropdownForm({ profiles, setSelectedDepartments }) {
 
