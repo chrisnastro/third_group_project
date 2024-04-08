@@ -11,15 +11,18 @@ const ProfileList = ({ profiles, title }) => {
 
   return (
     <div>
-      <h3  className="text-primary">{title}</h3>
+      <h3 className="text-primary">{title}</h3>
       <div className="employee-list">
-      <DropdownForm
-        profiles={profiles}
-        setSelectedDepartments={setSelectedDepartments} />
-        </div>
+        <DropdownForm
+          profiles={profiles}
+          setSelectedDepartments={setSelectedDepartments} />
+      </div>
       <div className="flex-row justify-space-between my-4">
         {profiles &&
           profiles.filter(profile => {
+            if (selectedDepartments === "Select a Department") {
+              return false
+            }
             if (selectedDepartments === "All Departments") {
               return true
             }
@@ -34,9 +37,7 @@ const ProfileList = ({ profiles, title }) => {
                   {profile.name} <br />
                   {profile.title} <br />
                   {profile.department} <br />
-
                 </h4>
-
                 <Link
                   className="btn btn-block btn-squared btn-light text-dark"
                   to={`/profiles/${profile._id}`}
