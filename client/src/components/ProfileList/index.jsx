@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import DropdownForm from '../Dropdown';
 import { useState } from 'react';
+import "./Dropdown.css";
 
 const ProfileList = ({ profiles, title }) => {
   if (!profiles.length) {
