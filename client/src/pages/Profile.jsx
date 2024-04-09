@@ -52,7 +52,7 @@ const Profile = () => {
           <p>{profile.name}</p>
           <p>{profile.title}</p>
           <p>{profile.department}</p>
-          <p>{profile.email}</p>
+          <a href={`mailto:${profile.email}`}>{profile.email}</a>
         </div>
       </div>
     </div>
