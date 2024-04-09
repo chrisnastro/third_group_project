@@ -82,8 +82,8 @@ const Signup = () => {
                     value={formState.email}
                     onChange={handleChange}
                   />
-                  <SignupDropdown label="Title__" options={titles} value={formState.title} onChange={handleChange} />
-                  <SignupDropdown label="Department__" options={departments} value={formState.department} onChange={handleChange} />
+                  <SignupDropdown label="Title" options={titles} value={formState.title} onChange={handleChange} />
+                  <SignupDropdown label="Department" options={departments} value={formState.department} onChange={handleChange} />
                   <input
                     className="form-input"
                     placeholder="******"
