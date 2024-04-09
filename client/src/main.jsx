@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Error from './pages/Error';
+import Public from './components/PublicProfileList'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,9 @@ const router = createBrowserRouter([
       }, {
         path: '/profiles/:profileId',
         element: <Profile />
+      }, {
+        path: '/profiles/public',
+        element: <Public />
       }
     ]
   }

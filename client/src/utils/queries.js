@@ -35,3 +35,15 @@ export const QUERY_ME = gql`
     }
   }
 `;
+
+export const QUERY_TITLES_AND_DEPARTMENTS = gql`
+  query info {
+    profiles {
+      title
+      department
+    }
+  }
+`;
+
+
+

@@ -35,6 +35,7 @@ const Profile = () => {
     );
   }
 
+
   return (
     <div className="contact-card">
 
