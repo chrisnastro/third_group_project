@@ -45,7 +45,7 @@ SO THAT I can easily reference and collaborate with other employees
 
 ### Deployed Application
 
-* [Click here for the deployed application]()
+* [Click here for the deployed application](https://employee-network-00310f60308c.herokuapp.com/)
 
 ### GitHub Repository
 

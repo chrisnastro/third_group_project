@@ -35,15 +35,8 @@ const Profile = () => {
     );
   }
 
-
   return (
     <div className="contact-card">
-
-      {/* <h2 className="card-header">
-        {profileId ? `${profile.name}'s` : 'Your'} contact info:
-      </h2> */}
-
-
       <div className="profile-container my-4 p-4 mx-0" style={{ border: '5px solid #1a1a1a' }} >
         <div className="profile-picture">
           <img src={profile.photo} alt="Profile Photo" />

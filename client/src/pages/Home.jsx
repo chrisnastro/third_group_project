@@ -1,7 +1,6 @@
 import { useQuery } from '@apollo/client';
 import ProfileList from '../components/ProfileList';
 import { QUERY_PROFILES } from '../utils/queries';
-import { Navigate } from 'react-router-dom';
 import Auth from '../utils/auth';
 
 const Home = () => {

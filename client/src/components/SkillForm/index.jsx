@@ -1,3 +1,5 @@
+// kept for future development
+
 const Profile = ({ profileId }) => {
 
   return (
