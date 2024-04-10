@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useMutation } from '@apollo/client';
 import { ADD_PROFILE } from '../utils/mutations';
 import Auth from '../utils/auth';
-
 import SignupDropdown from '../components/SignupDropdown';
 import PublicProfileList from '../components/PublicProfileList';
 
@@ -20,7 +18,6 @@ const Signup = () => {
   const [signupSuccess, setSignupSuccess] = useState(false);
   const [titles, setTitles] = useState([]);
   const [departments, setDepartments] = useState([]);
-
   const [addProfile, { error }] = useMutation(ADD_PROFILE);
 
   // update state based on form input changes
